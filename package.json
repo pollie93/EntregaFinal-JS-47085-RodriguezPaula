@@ -1,0 +1,24 @@
+{
+  "name": "preentrega3_rodriguezpaula",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/style.scss  css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollie93/PrimeraEntregaCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollie93/PrimeraEntregaCoder/issues"
+  },
+  "homepage": "https://github.com/pollie93/PrimeraEntregaCoder#readme",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
+}

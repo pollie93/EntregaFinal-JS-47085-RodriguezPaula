@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <!-- Meta para SEO -->
+    <meta name="description" content="League of Legends, es un videojuego multijugador de arena de batalla en línea desarrollado y publicado por Riot Games">
+    <meta name="keywords" content="League of legends, videojuego, mundial, esport, arcane, riot games">
+    <meta name="author" content="Paula Rodriguez"/>
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <!-- vinculamos mi css a mi html -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Inicio Navbar con BS-->
+    <header>
+        <nav class="navbar navbar-expand-xl" id="botonera">
+            <div class="container-fluid">
+                <a href="index.html" class="container-logo">
+                    <img src="images/riotgames_logo.png" alt="Logo Riot Games" class="img-logo-riot"/>
+                    <img src="images/logo_lol_encabezado.png" alt="Logo League of Legends" class="img-logo-l"/>
+                </a>
+                
+                <button class="navbar-toggler" type="button" id="burguer" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link links-nav" aria-current="page" href="pages/tiendachampions.html">Tienda de campeones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin Navbar con BS -->
+
+    <main class="main-container">
+        <section class="container-img">
+            <img src="images/League-of-Legends-logo.png" alt="Logo League of Legends" class="titulo-logo">
+            <video class="video-index" autoplay loop muted>
+                <source src="video-index/video_leagueoflegends_index.webm" type="video/webm">
+            </video>
+        </section>
+        <section class="info-juego">
+            <div class="titulo animate">
+                <h1>¿Qué es League of Legends?</h1>
+            </div>
+            <div class="container-description col-sm-8 col-md-6 col-lg-6 mx-sm-2">
+                <p class="descripcion-juego">
+                Es un juego de estrategia por equipos.
+                Cada equipo conformado por cinco poderosos campeones, que se enfrentan para destruir la base del otro equipo, llamada Nexo.
+                Elegí entre mas de 140 campeones para realizar jugadas épicas, asegurar asesinatos y destruir torrestas mientras avanzas a la victoria!
+                </p>
+                <p class="descripcion-juego">DESTRUYE LA BASE</p>
+                <p class="descripcion-juego">
+                    El nexo es el corazón de las bases de ambos equipos.
+                    Tu nexo es donde los aparecen los súbditos. Detrás de tu nexo se encuentra el fondo de la base, donde puedes recuperar vida y maná rápidamente, así como acceder a la tienda.
+                </p>
+                <p class="descripcion-juego">TU NEXO</p>
+                <p class="descripcion-juego">
+                    Es donde los aparecen los súbditos. Detrás de tu nexo se encuentra el fondo de la base, donde puedes recuperar vida y maná rápidamente, así como acceder a la tienda.
+                </p>
+                <p class="descripcion-juego">NEXO ENEMIGO</p>
+                <p class="descripcion-juego">
+                    Situado en la base del equipo enemigo, el nexo enemigo es igual al tuyo. Al destruir el nexo enemigo, tu equipo gana la partida.
+                </p>
+                <p class="descripcion-juego">DESPEJA EL CAMINO</p>
+                <p class="descripcion-juego">
+                    Tu equipo debe despejar al menos un carril para llegar al nexo enemigo. En tu camino se interponen estructuras defensivas denominadas torretas e inhibidores. Cada carril cuenta con tres torretas y un inhibidor, mientras que cada nexo está protegido por dos torretas.
+                </p>
+                <p class="descripcion-juego">DOMINA LA JUNGLA</p>
+                <p class="descripcion-juego">
+                    Entre los carriles se encuentra la jungla, en donde residen monstruos neutrales y plantas de la jungla. Los dos monstruos más importantes son Barón Nashor y los Dragones. Asesinar a estas unidades otorga mejoras únicas para tu equipo y también puede inclinar la balanza de la partida.
+                </p>
+                <p class="descripcion-juego">ELIGE TU CARRIL</p>
+                <p class="descripcion-juego">
+                    Hay cinco posiciones en la composición de equipo recomendada para una partida. Cada carril se presta más para el uso de cierto tipo de campeones y roles, pruébalos todos o juega en tu carril favorito.
+                </p>
+            </div>
+             <div class="titulo-formulario animate">
+                <h2>¿Querés saber mas? No dudes en contactarnos!</h2>
+            </div> 
+            <!-- formulario BS -->
+            <form action="" >
+                <div class="mb-3 label-text">
+                    <label for="exampleInputNombre" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="nameHelp" placeholder="Ingresa tu nombre y apellido">
+                </div>
+                <div class="mb-3 label-text">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email">
+                </div>
+                <div class="mb-3 label-text">
+                    <label for="label-text" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¡Escribe aquí tu mensaje!"></textarea>
+                  </div>
+                <div class="container-bottom">
+                    <a href="pages/404.html" class="button button-submit">Enviar</a>
+                    <a href="pages/404.html" class="button">Cancelar</a>
+                </div>
+            </form> 
+        </section>
+    </main>
+
+    <footer class="flex-lg-row" id="container-footer">
+        <!-- links absolutos, me doy cuenta por la URL -->
+        <div class="footer-text">
+            <div class="text-footer-riot">
+                <p>Riot Games Inc. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <div class="text-footer-redes-sociales">
+            <p>únete a nuestras redes sociales |</p>
+        </div>
+
+        <div class="container-redes-sociales">
+            <a href="https://www.youtube.com/RiotGamesLatino" target="_blank" class="container-link-img-redes">
+                <img src="images/logo_yt.png" alt="Seguinos en Youtube" class="footer-img">
+            </a>
+            <a href="https://twitter.com/lollatam" target="_blank" class="container-link-img-redes">
+                <img src="images/logo_twitter.png" alt="Seguinos en Twitter" class="footer-img">
+            </a>
+            <a href="https://www.facebook.com/LeagueofLegendsLatino" target="_blank" class="container-link-img-redes">
+                <img src="images/logo_fb.png" alt="Seguinos en Facebook" class="footer-img">
+            </a>
+            <a href="https://www.instagram.com/juegalol/" target="_blank" class="container-link-img-redes">
+                <img src="images/logo_ig.png" alt="Seguinos en Instagram" class="footer-img">
+            </a>
+            <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank" class="container-link-img-redes">
+                <img src="images/logo_redidit.png" alt="Seguinos en Reddit" class="footer-img">
+            </a> 
+        </div>
+            
+    </footer>
+
+<!-- JS de Bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

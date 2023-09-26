@@ -1,0 +1,269 @@
+*{
+    font-family: $mainFont;
+    box-sizing: $mainBoxSizing;
+}
+
+h1{
+    color: map-get($map: $whitePalette, $key:'uno');
+    text-transform: uppercase;
+    font-weight: $textBold; 
+}
+
+h2{
+    color:map-get($map: $whitePalette, $key:'uno');
+    font-size: $secondarySizing;
+    font-weight: $textBoldI;
+}
+
+
+// BOTON AZUL--Conoce a nuestros campeones & Esport
+.blue-button{
+    @extend .general-button;
+    background-color: map-get($map: $bluePalette, $key: 'tres');
+    color: map-get($map: $blackPalette, $key: 'tres');
+    &:hover {
+        background-color: map-get($map: $bluePalette, $key:'cuatro');
+        transform: scale(1.05);
+    };
+};
+
+
+// ANIMACIONES---Con tiempo
+@keyframes animation{
+    50% {background-color: map-get($map: $yellowPalette, $key: 'dos'); color:map-get($map: $blackPalette, $key: 'tres')};
+ }
+ .animate {
+     animation-name: animation; 
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-delay: 1.2s;
+     animation-timing-function: ease-in-out;
+     border-radius: 10px;
+     padding: 15px;
+ }
+ 
+ @keyframes animationII{
+     50% {color:map-get($map: $grayPalette, $key: 'cuatro')}
+ }
+ .animate-text{
+     animation-name: animationII;
+     animation-duration: 10s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+     font-size: $textLgI;
+     font-weight: bolder;
+ }
+ 
+ @media (max-width: 768px) {
+     #youtube-video {
+         width: 80%;
+         height: 80%;
+     }
+ }
+
+
+//HEADER--NAVBAR
+.nav-active {
+    color:map-get($map: $whitePalette, $key: 'dos');
+    @extend .general-logo;
+    font-weight: lighter;
+    padding: $paddingI;
+    text-decoration: underline solid map-get($map: $bluePalette, $key: 'uno') 30% !important;
+}
+
+#botonera{
+    background-color: map-get($map: $blackPalette, $key:'uno');
+    @include flex (row, space-between, center);
+    width: $width;
+    margin: 0%;
+    padding: 0%;
+    padding-right: 20px;
+    z-index: 5;
+    .container-logo{
+        color: map-get($map: $yellowPalette, $key: 'uno');
+        @include texto(none,uppercase);
+        width: 30;
+        .img-logo-riot{
+            @extend .img-general-logo;
+            @include mediaQuery(xl) {
+                display: none;
+            };
+            &:hover{
+                @extend .general-logo;
+                padding: 6px 8px;
+            }
+        }
+        .img-logo-l{
+            @extend .img-general-logo;
+            &:hover{
+                @extend .general-logo;
+                padding: 8px 10px;
+            }
+        }
+    }
+    #burguer{
+        background-color:map-get($map: $yellowPalette, $key:'dos');
+    }
+    .links-nav{
+        color:  map-get($map: $whitePalette, $key: 'uno');
+        margin: 5px;
+        padding: $paddingI;
+        text-decoration: none;
+        &:hover{
+            color:map-get($map: $whitePalette, $key: 'dos');
+            @extend .general-logo;
+            font-weight: lighter;
+            padding: $paddingI;
+            text-decoration: underline solid map-get($map: $bluePalette, $key: 'uno') 30%;
+        }
+    }
+}
+
+// MAIN--INDEX
+.main-container{
+    background-color: map-get($map: $blackPalette, $key: 'dos');
+    .container-img {
+        height: $height;
+        .titulo-logo{
+            width: 25%;
+            position: absolute;
+            top: 30%;
+            left: 38%;
+            @include mediaQuery(xl) {
+                display: none;
+            };
+            @include mediaQuery(m) {
+                width: 30%;
+                position: absolute;
+                top: 55%;
+                left: 35%;
+            };
+            @include mediaQuery(sm) {
+                width: 30%;
+                position: absolute;
+                top: 58%;
+                left: 38%;
+            };
+        }
+        .video-index{
+            height: 100vh;
+            width: 100%;
+            @include mediaQuery(xl) {
+                height: auto;
+            };
+}
+    }
+    .info-juego{
+        @include flex(column,center,center);
+        padding: 15px 0;
+        .container-description{
+            border: 1px solid map-get($map: $yellowPalette, $key: 'dos');
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 20px;
+            .descripcion-juego{
+                font-size: 16px;
+                color: map-get($map: $whitePalette, $key: 'uno');
+                letter-spacing: 1.1px;
+                line-height: 20px;
+            }
+        }    
+    }
+}
+
+// Formulario
+.titulo-formulario{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+}
+.container-formulario{
+   display: flex;
+   justify-content: space-between;
+} 
+.label-text{
+    color: map-get($map: $whitePalette, $key: 'uno');
+}
+
+//ERROR 404
+.error-404{
+    background-image: url("../images/error404/404.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .error-404-button{
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include mediaQuery(m) {
+            margin-bottom: 15%;
+        }
+        .texto-404{
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-weight:$textBoldII;
+            font-size: $textLgI;
+            text-align: center;
+            color: map-get($map: $whitePalette, $key: 'uno');
+            background-color: map-get($map: $yellowPalette, $key:'dos');
+            @include mediaQuery(l) {
+                font-size: $textMd;
+            }
+        };
+        .button-volver-index{
+            @extend .general-button;
+            color: map-get($map: $whitePalette, $key:'tres');
+            background-color: map-get($map: $bluePalette, $key:'uno');
+            text-align: center;
+            @include mediaQuery(l) {
+                font-size: $textMd;
+            }
+            &:hover{
+                background-color: map-get($map: $bluePalette, $key:'dos');
+                transform: scale(1.05);
+            }
+        }
+    }
+};
+
+//FOOTER
+#container-footer {
+    @include flex (column, space-evenly,center);
+    background-color: map-get($map: $blackPalette, $key: 'uno');
+    padding: 10px 0;
+    .footer-text{
+        display: flex;
+        color: map-get($map: $whitePalette, $key: 'uno');
+        .text-footer-riot{
+            flex-direction: column;
+            @include mediaQuery(sm) {
+                text-align: center;
+            }
+        }
+    }
+    .text-footer-redes-sociales{
+        text-transform: uppercase;
+        font-weight: $textBold;
+        color:map-get($map: $whitePalette, $key: 'uno');
+    }
+    .container-redes-sociales{
+        display: flex;
+        .container-link-img-redes{
+            margin: 0 6px;
+            .footer-img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+
+
