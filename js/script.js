@@ -149,7 +149,4 @@ if (respuesta1 !== "cancelar") {
       alert("Gracias por participar");
     }
   }
-
-  // VER XQ LA ESENCIA AL FINAL ACUMULADA ES 0
-  // VER QUE PASA SI ESCRIBE  CANCELAR EL USUARIO
 }
