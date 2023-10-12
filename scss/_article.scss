@@ -1,340 +1,79 @@
-/* NOTICIAS */
-.articulos{
-    @include flex(column,center,center);
-    background-color: map-get($map: $blackPalette, $key: 'dos');
-    .noticias-articulos{
-        @include flex(column,space-around,center);
-        .container-articulos {
-            height: 300px;
-            width: 300px;
-            border: 1px solid map-get($map: $grayPalette, $key:'cuatro');
-            margin: 20px 0;
-            border-radius: 20px;
-            .imagenes-noticias{
-                height: 50%;
-                width: 100%;
-                border-radius: 20px;
-            }
-            .description-articulos{
-                margin: 10px;
-                .encabezado-noticia{
-                    font-size: $textMd;
-                    font-weight: $textBoldI;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: map-get($map: $whitePalette, $key: 'uno');
-                }
-                .info-articulo{
-                    margin: 10px 0;
-                    font-weight: $textThin;
-                    line-height: $textLg;
-                    color: map-get($map: $whitePalette, $key: 'uno');
-                };
-            };
-        };
-    };
-};
-
-.seccion{
-    width: 70%;
-    text-align: center;
-    &.container-actualizando{
-        margin: 20px 0;
-        .titulo-actualizando{
-            text-align: center;
-            margin: 15px 0;
-            font-size: $textLgI;
-            font-weight: $textBoldI;
-            color: map-get($map: $whitePalette, $key: 'uno');
-        }
-        #youtube-video{
-            margin: 0 auto;
-        }
-    }
-    .titulo-pretemporada{
-        margin: 15px 0;
-        font-size: $textLg;
-        font-weight: $textBoldI;
-        color: map-get($map: $whitePalette, $key: 'uno');
-    }
-    #youtube-video{
-        margin: 0 auto
-    };
-    .contenedores-parrafos{
-        margin: 20px 0;
-        .parrafo-pretemporada{
-            color: map-get($map: $whitePalette, $key: 'uno');
-        }
-        .link-pretemporada{
-            color: map-get($map: $yellowPalette, $key: 'uno');
-            text-decoration: none;
-        };
-    };
-};
-
-
-/* ESPORTS */
-.main-esports{
-    background-color: map-get($map: $blackPalette, $key: 'dos');
-    .imagen-principal{
-        height: 100vh;
-        width: 100vw;
-        max-width:100%;
-        position: relative;
-        filter: brightness(70%);
-        @include mediaQuery (m) {
-            height: auto;
-        }
-    }
-    .ver-temporada{
-        position: absolute;
-        top: 45%;
-        left: 10%;
-        @include mediaQuery(m){
-            top: 19%;
-            left: 4%;
-            font-weight: $textBold;
-            font-size: $textLg;
-        }
-        @include mediaQuery(sm){
-            top: 12%;
-            left: 10%;
-            font-weight: $textBold;
-            font-size: 1em;
-        }
-        .titulo-esports{
-            color: map-get($map: $whitePalette, $key: 'cuatro') !important;
-            font-size: 60px;
-            text-transform: uppercase;
-            font-weight: $textBold;
-            @include mediaQuery(m) {
-                font-size: $textLg;
-            }
-            &.parrafo-temporada{
-                margin-bottom: 15px;
-                @include mediaQuery(m) {
-                    font-size: $textLg;
-                }
-            }
-        }
-    }   
-    .container-articulos-esports{
-        display: flex;
-        max-width: 100%;
-        @include mediaQuery(xxl) {
-            flex-direction: column;            
-        };
-        .container-esports{
-            text-align: center;
-            margin: 10px;
-            height: 330px;
-            .imagen-esports{
-                height: 60%;
-                border-radius: 30px;
-                @include mediaQuery(m){
-                    max-height: 50%;
-                }
-            }
-            .parrafo-esport{
-                color: map-get($map: $whitePalette, $key:'tres');
-            }
-        }
-    }
-    .esport-momentos-videos{
-        @include flex(column,start,center);
-        padding-bottom:20px;
-        padding-top: 5px;
-        .titulo-destacados{
-            color: map-get($map: $whitePalette, $key: 'tres');
-            font-size: 40px;
-            text-transform: uppercase;
-            font-weight: bolder;
-            text-align: center;
-            margin: 15px 0;
-        };
-        .videos-esports{
-            width: $width;
-            display: flex;
-            justify-content: space-evenly;
-            margin: 5px;
-            padding: 5px;
-            @include mediaQuery(xxl) {
-                flex-direction: column;
-                align-items: center;
-            };
-            .video-esports-iframe{
-                height: 340px;
-                width: 33%; 
-                @include mediaQuery(xxl) {
-                    margin: 15px 0;
-                    width: 66%; 
-                };
-                @include mediaQuery(m) {
-                    margin: 15px 0;
-                    width: 99%; 
-                };
-            };
-        };
-    };        
-};
-
 /* CONOCE A NUESTROS CAMPEONES */
 
-.container-champions{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
-    background-color: map-get($map: $blackPalette, $key: 'dos');
-    .titulo{
-        color: map-get($map: $whitePalette, $key:'uno');
-        font-size: 30px;
+.container-champions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  background-color: map-get($map: $blackPalette, $key: "dos");
+  .titulo {
+    color: map-get($map: $whitePalette, $key: "uno");
+    font-size: 30px;
+    font-weight: $textBoldI;
+    text-align: center;
+    .text-campeon {
+      font-size: 80px;
+      @include mediaQuery(sm) {
+        font-size: 65px;
+      }
+    }
+  }
+  .descripcion-champ {
+    color: map-get($map: $whitePalette, $key: "uno");
+    text-align: center;
+  }
+  .container-cards-champ {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    margin: 25px 0px;
+    @include mediaQuery(xxl) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+    @include mediaQuery(xl) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include mediaQuery(l) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mediaQuery(m) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .champion-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: map-get($map: $blackPalette, $key: "cuatro");
+      border-radius: 20px;
+      padding: 1px;
+      &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: map-get($map: $bluePalette, $key: "dos");
+      }
+      .card {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .champion-name {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+        font-weight: $textBoldII;
+        color: map-get($map: $whitePalette, $key: "dos");
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 5px 0;
+      }
+      .champ-cost {
+        font-size: $textMd;
         font-weight: $textBoldI;
         text-align: center;
-        .text-campeon{
-            font-size: 80px;
-            @include mediaQuery(sm){
-                font-size: 65px;
-            }
-        }
+        margin: auto;
+        color: map-get($map: $whitePalette, $key: "dos");
+      }
     }
-    .descripcion-champ{
-        color:  map-get($map: $whitePalette, $key:'uno');
-        text-align: center;
-    }
-    .container-cards-champ{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(4,1fr);
-        gap: 25px;
-        margin: 25px 0px;
-        @include mediaQuery(xxl) {
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(5,1fr);
-        }
-        @include mediaQuery(xl) {
-            grid-template-columns: repeat(3,1fr);
-        }
-        @include mediaQuery(l) {
-            grid-template-columns: repeat(2,1fr);
-        }
-        @include mediaQuery(m) {
-            grid-template-columns: repeat(1,1fr);
-        }
-        .champion-card{
-            background-color: map-get($map: $blackPalette, $key: 'cuatro');
-            border-radius: 20px;
-            padding: 1px;
-            &:hover{
-                transform: scale(1.05);
-                cursor: pointer;
-                background-color: map-get($map: $bluePalette, $key: 'dos');    
-            }
-            .card{
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-            }
-            .champion-name{
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                text-align: center;
-                font-weight: $textBoldII;
-                color:map-get($map: $whitePalette, $key: 'dos');
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                padding: 5px 0;
-            }
-        }
-    }
-}
-
-// ENTRETENIMIENTO
-.main-container-entretenimiento{
-    background-color: map-get($map: $blackPalette, $key: 'dos');
-    .img-arcane{
-        height: 100vh;
-        width: 100vw;
-        max-width:100%;
-        position: relative;
-        filter: brightness(70%);
-        @include mediaQuery(xl) {
-            height: auto;
-        };
-
-    }
-    .titulo-riot{
-        color: map-get($map: $yellowPalette, $key: 'tres');
-        margin-bottom: 15px;
-        font-weight: bolder;
-        font-size: 1.6rem;
-        line-height: 1.5;
-        position: absolute;
-        z-index: 5;
-        bottom: 12%;
-        left: 5%;
-        @include mediaQuery(xl) {
-            top: 30%;
-            left: 40%;
-            display: none;
-        };
-    }
-    .trailer-button{
-        position: absolute;
-        right: 5%;
-        bottom: 12%;
-        @include mediaQuery(xl) {
-            right: 42%;
-            bottom: 48%;
-            display: none;
-        };
-    }
-    .button-netflix{
-            @extend .general-button;
-            position: absolute;
-            right: 5%;
-            bottom: 5%;
-            color: map-get($map: $yellowPalette, $key:'tres');
-            background-color: map-get($map: $grayPalette, $key:'dos');
-            @include mediaQuery(xl) {
-                right: 34%;
-                bottom: 34%;
-                display: none;
-            };
-        .span-netflix{
-            color:rgb(229, 9, 20);
-            text-transform: uppercase;
-            font-weight: $textBold;
-        }
-    }
-    .multimedia-arcane{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 15px 0;
-        .multimedia-title{
-            color: map-get($map: $whitePalette, $key: 'uno');
-            margin: 15px 0;
-        }
-        .multimedia-container {
-            width: $width;
-            display: flex;
-            justify-content: space-between;
-            @include mediaQuery(xxl) {
-                align-items: center;
-                flex-direction: column;
-            };
-            .multimedia-video{
-                height: 340px;
-                width: 33%; 
-                @include mediaQuery(xxl) {
-                    margin: 15px 0;
-                    width: 66%; 
-                };
-                @include mediaQuery(m) {
-                    margin: 15px 0;
-                    width: 99%; 
-                };
-            };
-        }
-    }
+  }
 }

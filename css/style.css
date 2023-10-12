@@ -34,7 +34,7 @@
   }
 }
 
-.general-button, .main-container-entretenimiento .button-netflix, .error-404 .error-404-button .button-volver-index, .blue-button, .button {
+.general-button, .error-404 .error-404-button .button-volver-index, .blue-button, .button {
   border: none;
   padding: 15px 32px;
   margin: 10px 0;
@@ -59,6 +59,11 @@
 
 .button-submit {
   margin-right: 20px;
+}
+
+.add-cart {
+  padding: 6px 15px;
+  font-size: 1.1em;
 }
 
 * {
@@ -340,214 +345,6 @@ h2 {
   height: 50px;
 }
 
-/* NOTICIAS */
-.articulos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0f1519;
-}
-.articulos .noticias-articulos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.articulos .noticias-articulos .container-articulos {
-  height: 300px;
-  width: 300px;
-  border: 1px solid gray;
-  margin: 20px 0;
-  border-radius: 20px;
-}
-.articulos .noticias-articulos .container-articulos .imagenes-noticias {
-  height: 50%;
-  width: 100%;
-  border-radius: 20px;
-}
-.articulos .noticias-articulos .container-articulos .description-articulos {
-  margin: 10px;
-}
-.articulos .noticias-articulos .container-articulos .description-articulos .encabezado-noticia {
-  font-size: 1.1em;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  color: #f9f9f9;
-}
-.articulos .noticias-articulos .container-articulos .description-articulos .info-articulo {
-  margin: 10px 0;
-  font-weight: 200;
-  line-height: 1.5em;
-  color: #f9f9f9;
-}
-
-.seccion {
-  width: 70%;
-  text-align: center;
-}
-.seccion.container-actualizando {
-  margin: 20px 0;
-}
-.seccion.container-actualizando .titulo-actualizando {
-  text-align: center;
-  margin: 15px 0;
-  font-size: 2em;
-  font-weight: 600;
-  color: #f9f9f9;
-}
-.seccion.container-actualizando #youtube-video {
-  margin: 0 auto;
-}
-.seccion .titulo-pretemporada {
-  margin: 15px 0;
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #f9f9f9;
-}
-.seccion #youtube-video {
-  margin: 0 auto;
-}
-.seccion .contenedores-parrafos {
-  margin: 20px 0;
-}
-.seccion .contenedores-parrafos .parrafo-pretemporada {
-  color: #f9f9f9;
-}
-.seccion .contenedores-parrafos .link-pretemporada {
-  color: #d9bd0b;
-  text-decoration: none;
-}
-
-/* ESPORTS */
-.main-esports {
-  background-color: #0f1519;
-}
-.main-esports .imagen-principal {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  position: relative;
-  filter: brightness(70%);
-}
-@media (max-width: 768px) {
-  .main-esports .imagen-principal {
-    height: auto;
-  }
-}
-.main-esports .ver-temporada {
-  position: absolute;
-  top: 45%;
-  left: 10%;
-}
-@media (max-width: 768px) {
-  .main-esports .ver-temporada {
-    top: 19%;
-    left: 4%;
-    font-weight: bold;
-    font-size: 1.5em;
-  }
-}
-@media (max-width: 576px) {
-  .main-esports .ver-temporada {
-    top: 12%;
-    left: 10%;
-    font-weight: bold;
-    font-size: 1em;
-  }
-}
-.main-esports .ver-temporada .titulo-esports {
-  color: #D1CFCC !important;
-  font-size: 60px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .main-esports .ver-temporada .titulo-esports {
-    font-size: 1.5em;
-  }
-}
-.main-esports .ver-temporada .titulo-esports.parrafo-temporada {
-  margin-bottom: 15px;
-}
-@media (max-width: 768px) {
-  .main-esports .ver-temporada .titulo-esports.parrafo-temporada {
-    font-size: 1.5em;
-  }
-}
-.main-esports .container-articulos-esports {
-  display: flex;
-  max-width: 100%;
-}
-@media (max-width: 1400px) {
-  .main-esports .container-articulos-esports {
-    flex-direction: column;
-  }
-}
-.main-esports .container-articulos-esports .container-esports {
-  text-align: center;
-  margin: 10px;
-  height: 330px;
-}
-.main-esports .container-articulos-esports .container-esports .imagen-esports {
-  height: 60%;
-  border-radius: 30px;
-}
-@media (max-width: 768px) {
-  .main-esports .container-articulos-esports .container-esports .imagen-esports {
-    max-height: 50%;
-  }
-}
-.main-esports .container-articulos-esports .container-esports .parrafo-esport {
-  color: #fcfcfa;
-}
-.main-esports .esport-momentos-videos {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  padding-bottom: 20px;
-  padding-top: 5px;
-}
-.main-esports .esport-momentos-videos .titulo-destacados {
-  color: #fcfcfa;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bolder;
-  text-align: center;
-  margin: 15px 0;
-}
-.main-esports .esport-momentos-videos .videos-esports {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 5px;
-  padding: 5px;
-}
-@media (max-width: 1400px) {
-  .main-esports .esport-momentos-videos .videos-esports {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.main-esports .esport-momentos-videos .videos-esports .video-esports-iframe {
-  height: 340px;
-  width: 33%;
-}
-@media (max-width: 1400px) {
-  .main-esports .esport-momentos-videos .videos-esports .video-esports-iframe {
-    margin: 15px 0;
-    width: 66%;
-  }
-}
-@media (max-width: 768px) {
-  .main-esports .esport-momentos-videos .videos-esports .video-esports-iframe {
-    margin: 15px 0;
-    width: 99%;
-  }
-}
-
 /* CONOCE A NUESTROS CAMPEONES */
 .container-champions {
   display: flex;
@@ -603,6 +400,9 @@ h2 {
   }
 }
 .container-champions .container-cards-champ .champion-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(6, 28, 37);
   border-radius: 20px;
   padding: 1px;
@@ -626,107 +426,12 @@ h2 {
   letter-spacing: 2px;
   padding: 5px 0;
 }
-
-.main-container-entretenimiento {
-  background-color: #0f1519;
-}
-.main-container-entretenimiento .img-arcane {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  position: relative;
-  filter: brightness(70%);
-}
-@media (max-width: 1200px) {
-  .main-container-entretenimiento .img-arcane {
-    height: auto;
-  }
-}
-.main-container-entretenimiento .titulo-riot {
-  color: rgb(237, 224, 206);
-  margin-bottom: 15px;
-  font-weight: bolder;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  position: absolute;
-  z-index: 5;
-  bottom: 12%;
-  left: 5%;
-}
-@media (max-width: 1200px) {
-  .main-container-entretenimiento .titulo-riot {
-    top: 30%;
-    left: 40%;
-    display: none;
-  }
-}
-.main-container-entretenimiento .trailer-button {
-  position: absolute;
-  right: 5%;
-  bottom: 12%;
-}
-@media (max-width: 1200px) {
-  .main-container-entretenimiento .trailer-button {
-    right: 42%;
-    bottom: 48%;
-    display: none;
-  }
-}
-.main-container-entretenimiento .button-netflix {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-  color: rgb(237, 224, 206);
-  background-color: #383838;
-}
-@media (max-width: 1200px) {
-  .main-container-entretenimiento .button-netflix {
-    right: 34%;
-    bottom: 34%;
-    display: none;
-  }
-}
-.main-container-entretenimiento .button-netflix .span-netflix {
-  color: rgb(229, 9, 20);
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.main-container-entretenimiento .multimedia-arcane {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 15px 0;
-}
-.main-container-entretenimiento .multimedia-arcane .multimedia-title {
-  color: #f9f9f9;
-  margin: 15px 0;
-}
-.main-container-entretenimiento .multimedia-arcane .multimedia-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 1400px) {
-  .main-container-entretenimiento .multimedia-arcane .multimedia-container {
-    align-items: center;
-    flex-direction: column;
-  }
-}
-.main-container-entretenimiento .multimedia-arcane .multimedia-container .multimedia-video {
-  height: 340px;
-  width: 33%;
-}
-@media (max-width: 1400px) {
-  .main-container-entretenimiento .multimedia-arcane .multimedia-container .multimedia-video {
-    margin: 15px 0;
-    width: 66%;
-  }
-}
-@media (max-width: 768px) {
-  .main-container-entretenimiento .multimedia-arcane .multimedia-container .multimedia-video {
-    margin: 15px 0;
-    width: 99%;
-  }
+.container-champions .container-cards-champ .champion-card .champ-cost {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  color: #f2f0f0;
 }
 
 /*# sourceMappingURL=style.css.map */

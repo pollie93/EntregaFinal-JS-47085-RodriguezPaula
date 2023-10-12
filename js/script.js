@@ -34,7 +34,7 @@ const pregunta1 = alert(
 );
 let respuesta1 = prompt(
   "Elegí la respuesta correcta \n1 - Twenty One Pilots \n2 - One Republic \n3 - Nickelback \n4 - Imagine Dragons \nEscribí Cancelar para salir"
-);
+).toLowerCase();
 
 while (respuesta1 !== "cancelar" && respuesta1 !== "4") {
   switch (respuesta1) {
@@ -57,7 +57,7 @@ while (respuesta1 !== "cancelar" && respuesta1 !== "4") {
   }
   respuesta1 = prompt(
     "Elegí la respuesta correcta \n1 - Twenty One Pilots \n2 - One Republic \n3 - Nickelback \n4 - Imagine Dragons \nEscribí Cancelar para salir"
-  );
+  ).toLowerCase();
 }
 
 if (respuesta1 !== "cancelar") {
@@ -69,7 +69,7 @@ if (respuesta1 !== "cancelar") {
   );
   let respuesta2 = prompt(
     "Elegí la respuesta correcta \n1 - 2011 \n2 - 2013 \n3 - 2009 \n4 - 2014 \nEscribí Cancelar para salir"
-  );
+  ).toLowerCase();
 
   while (respuesta2 !== "cancelar" && respuesta2 !== "3") {
     switch (respuesta2) {
@@ -94,7 +94,7 @@ if (respuesta1 !== "cancelar") {
     }
     respuesta2 = prompt(
       "Elegí la respuesta correcta \n1 - 2011 \n2 - 2013 \n3 - 2009 \n4 - 2014 \nEscribí Cancelar para salir"
-    );
+    ).toLowerCase();
   }
 
   if (respuesta2 !== "cancelar") {
@@ -106,7 +106,7 @@ if (respuesta1 !== "cancelar") {
     );
     let respuesta3 = prompt(
       "Elegí la respuesta correcta \n1 - Supercell \n2 - Riot Games \n3 - Rockstar Games \n4 - Epic Games \nEscribí Cancelar para salir"
-    );
+    ).toLowerCase();
 
     while (respuesta3 !== "cancelar" && respuesta3 !== "2") {
       switch (respuesta3) {
@@ -130,7 +130,7 @@ if (respuesta1 !== "cancelar") {
       }
       respuesta3 = prompt(
         "Elegí la respuesta correcta \n1 - Supercell \n2 - Riot Games \n3 - Rockstar Games \n4 - Epic Games \nEscribí Cancelar para salir"
-      );
+      ).toLowerCase();
     }
 
     // if (respuesta3 === "cancelar") return;
