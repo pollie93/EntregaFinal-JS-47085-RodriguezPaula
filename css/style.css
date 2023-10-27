@@ -34,7 +34,7 @@
   }
 }
 
-.general-button, .error-404 .error-404-button .button-volver-index, .blue-button, .button {
+.general-button, .error-404 .error-404-button .button-volver-index, .blue-button, .button-container-summonerName, .button {
   border: none;
   padding: 15px 32px;
   margin: 10px 0;
@@ -240,6 +240,60 @@ h2 {
   color: #f9f9f9;
   letter-spacing: 1.1px;
   line-height: 20px;
+}
+
+.container-summoner {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  height: 100%;
+  margin: 30px 0px;
+}
+
+.button-nameSummoner {
+  width: 20vh;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #d9bd0b;
+}
+
+.input-summoner {
+  border-radius: 5px;
+  border: 1px solid #d9bd0b;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.errorChampions {
+  color: red;
+}
+
+.container-enfrentamiento {
+  width: 50%;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 30px 0px;
+}
+
+.firstChamp {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #d9bd0b;
+}
+
+.secondChamp {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d9bd0b;
 }
 
 .titulo-formulario {

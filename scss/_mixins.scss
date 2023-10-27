@@ -102,6 +102,11 @@ $bluePalette: (
   color: map-get($map: $blackPalette, $key: "tres");
 }
 
+//BOTON USUARIO NOMBRE
+.button-container-summonerName {
+  @extend .general-button;
+}
+
 .button:hover {
   background-color: map-get($map: $yellowPalette, $key: "tres");
   transform: scale(1.05);
