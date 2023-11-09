@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta clima</title>
+    <meta name="description" content="Consultar clima.">
+    <meta name="keywords" content="Clima, weather, search">
+    <meta name="author" content="Paula Rodriguez" />
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Inicio NavBar con BS -->
+    <header>
+        <nav class="navbar navbar-expand-xl" id="botonera">
+            <div class="container-fluid">
+                <a href="../index.html" class="container-logo">
+                    <img src="../images/riotgames_logo.png" alt="Logo Riot Games" class="img-logo-riot" />
+                    <img src="../images/logo_lol_encabezado.png" alt="Logo League of Legends" class="img-logo-l" />
+                </a>
+
+                <button class="navbar-toggler" type="button" id="burguer" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link links-nav nav-active" aria-current="page" href="tiendachampions.html">CONOCÉ A NUESTROS
+                                CAMPEONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links-nav nav-active" aria-current="page" href="batalla.html">BATALLA DE
+                                CAMPEONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links-nav nav-active" aria-current="page" href="#">CONSULTAR CLIMA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin Navbar con BS -->
+
+    <!-- MAIN INICIO -->
+    <main class="container-champions">
+        <div class="titulo-champions">
+            <h3 class="titulo" id="btnConsultar">CONSULTAR CLIMA</h3>
+        </div>
+    </main>
+    <!-- MAIN FIN -->
+
+    <!-- FORMULARIO CONSULTA CLIMA -->
+    <div class="container-form-weather">
+        <div id="resultado"></div>
+        <form class="containerFormWheater" id="nuevoResultado">
+            <input type="text" placeholder="Ciudad" id="consultaCiudad" class="inputCiudad">
+            <input type="text" placeholder="Pais" id="consultaPais" class="inputPais">
+            <button class="button-weather" id="btn-weather" id="btn-weather-nueva-busqueda">Consultar</button>
+        </form>
+    </div>
+
+    <!-- FOOTER INICIO -->
+    <footer class="flex-lg-row" id="container-footer">
+        <div class="footer-text">
+            <div class="text-footer-riot">
+                <p>Riot Games Inc. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <div class="text-footer-redes-sociales">
+            <p>únete a nuestras redes sociales |</p>
+        </div>
+
+        <div class="container-redes-sociales">
+            <a href="https://www.youtube.com/RiotGamesLatino" target="_blank" class="container-link-img-redes">
+                <img src="../images/logo_yt.png" alt="Seguinos en Youtube" class="footer-img">
+            </a>
+            <a href="https://twitter.com/lollatam" target="_blank" class="container-link-img-redes">
+                <img src="../images/logo_twitter.png" alt="Seguinos en Twitter" class="footer-img">
+            </a>
+            <a href="https://www.facebook.com/LeagueofLegendsLatino" target="_blank" class="container-link-img-redes">
+                <img src="../images/logo_fb.png" alt="Seguinos en Facebook" class="footer-img">
+            </a>
+            <a href="https://www.instagram.com/juegalol/" target="_blank" class="container-link-img-redes">
+                <img src="../images/logo_ig.png" alt="Seguinos en Instagram" class="footer-img">
+            </a>
+            <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank" class="container-link-img-redes">
+                <img src="../images/logo_redidit.png" alt="Seguinos en Reddit" class="footer-img">
+            </a>
+        </div>
+    </footer>
+    <!-- FOOTER FIN -->
+    <!-- JS de Bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <!-- <script src="../js/script.js"></script> 
+    <script src="../js/champsArray.js"></script> -->
+    <!-- <script src="../js/manejoDom.js"></script> -->
+    <script src="../js/clima.js"></script>
+</body>
+
+</html>

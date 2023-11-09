@@ -186,7 +186,8 @@ h2 {
   margin: 30px 0px;
 }
 
-.button-nameSummoner {
+.button-nameSummoner,
+.button-weather {
   width: 20vh;
   padding: 10px;
   margin-bottom: 20px;
@@ -205,7 +206,26 @@ h2 {
   color: red;
 }
 
+.container-form-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 15px;
+}
+
+.containerFormWheater {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 //ENFRENTAMIENTO
+
+.hidden {
+  display: none;
+}
 
 .container-enfrentamiento {
   width: 50%;
@@ -217,7 +237,9 @@ h2 {
   height: 100%;
   margin: 30px 0px;
 }
-.firstChamp {
+.firstChamp,
+.inputCiudad,
+.inputPais {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;
